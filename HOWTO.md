@@ -22,7 +22,7 @@
 ### 内核的配置
 
 ```
-# 拷贝host上的config到内核源码目录下,命名为.config
+# 拷贝host上的config到内核源码目录下,命名为.config（在内核文件下完成）
 cp /boot/config-xxx .config
 yes '' | make oldconfig
 make menuconfig
@@ -72,6 +72,9 @@ sudo reboot # NOW you can use the new kernel
 -------------------------------------------------------------------------------
 
 **下载和编译工具**
+（ubuntu可以直接使用sudo apt-get install rt-tests来安装cyclictest）
+Cyclictest 简介 安装 测试
+https://blog.csdn.net/qq_45632433/article/details/100729917
 
 ```
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/clrkwllms/rt-tests.git
